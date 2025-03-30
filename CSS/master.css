@@ -5,7 +5,7 @@
 }
 
 body {
-    /* Font TBD */
+    font-family: "work Sans", sans-serif;
 }
 
 :root {
@@ -16,8 +16,6 @@ body {
     --section-padding: 60px;
     --section-background: #f6f6f6;
     --transition-duration: 0.3s;
-
-
 }
 
 .container {
@@ -78,7 +76,7 @@ body {
     text-decoration: none;
     color: #000;
     padding: 10px 15px;
-    transition: all var(0.3s) ease-in-out;
+    transition: all var(--transition-duration) ease-in-out;
 }
 
 .navbar .nav-links a:hover {
@@ -86,4 +84,102 @@ body {
     background-color: var(--secondary-color);
     border-radius: 5px;
     transition: all var(--transition-duration) ease-in-out;
+}
+
+.navbar .container button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all var(--transition-duration) ease-in-out;
+    border-radius: 5px;
+}
+
+.navbar .container .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: all var(--transition-duration) ease-in-out;
+}
+
+.navbar .container .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navbar .container .logo:hover {
+    color: var(--third-color);
+    transition: all var(--transition-duration) ease-in-out;
+}
+
+.navbar .container button:hover {
+    background-color: var(--third-color);
+    color: #fff;
+    border-radius: 5px;
+    transition: all var(--transition-duration) ease-in-out;
+}
+
+.navbar .container button:focus {
+    outline: none;
+}
+
+.navbar .container button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    padding: var(--section-padding) 0;
+    background-color: var(--section-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main .container h1 {
+    font-size: 36px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main .container p {
+    font-size: 18px;
+    color: var(--secondary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main .container button {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all var(--transition-duration) ease-in-out;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main .container button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--third-color);
+    transform: scale(0);
+    transition: all var(--transition-duration) ease-in-out;
+    z-index: -1;
 }
