@@ -9,10 +9,10 @@ body {
 }
 
 :root {
-    --main-color: #17153B;
-    --secondary-color: #2E236C;
-    --third-color: #433D8B;
-    --fourth-color: #C8ACD6;
+    --main-color: #213555;
+    --secondary-color: #D8C4B6;
+    --third-color: #3E5879;
+    --fourth-color: #F5EFE7;
     --section-padding: 60px;
     --section-background: #f6f6f6;
     --transition-duration: 0.3s;
