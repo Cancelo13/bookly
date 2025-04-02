@@ -5,19 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookly</title>
-    <link rel="stylesheet" href="css/books.css">
+    <link rel="stylesheet" href="CSS/books.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <div class="navbar">
         <div class="container">
-            <div class="logo">
-                <img src="https://placehold.co/600x400" alt="Bookly Logo" class="logo-img">
-            </div>
+            <a href="index.html" class="logo">
+                <img src="images/bookly-logo3.png" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
                 <li><a href="books_list.html">Our Books</a></li>
 
             </ul>
@@ -27,27 +35,66 @@
             </div>
         </div>
     </div>
-    <div class="main">
+    <section class="books-section">
         <div class="container">
-            <h1>Welcome to Bookly</h1>
-            <p>Your one-stop solution for all your book needs.</p>
-            <button class="explore"><a href="books_list.html">Explore Now </a></button>
+            <div class="books-grid" id="booksGrid">
+                <!-- Book cards will be dynamically generated here -->
+            </div>
+            <div class="pagination">
+                <button id="prevPage" onclick="previousPage()">Previous</button>
+                <span class="page-number">Page <span id="currentPage">1</span></span>
+                <button id="nextPage" onclick="nextPage()">Next</button>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books. Join our community of book
+                        lovers today.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="books_list.html">Books</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +20 106 150 9572</li>
+                        <li><i class="fas fa-envelope"></i> contact@bookly.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> FCAI-Cairo University</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
+            </div>
         </div>
     </div>
 
-    <div class="about-section" id="#about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Bookly is a platform that connects readers with their favorite books and authors.</p>
-        </div>
-    </div>
+    <script src="scripts/books-page.js">
 
-    <div class="contact-section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to reach out!</p>
-        </div>
-    </div>
+    </script>
 
 </body>
 
