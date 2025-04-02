@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookly</title>
-    <link rel="stylesheet" href="CSS/master.css">
+    <link rel="stylesheet" href="CSS/register.css">
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,21 +16,92 @@
 </head>
 
 <body>
+
     <div class="navbar">
         <div class="container">
-            <div class="logo">
-                <img src="https://placehold.co/600x400" alt="Bookly Logo" class="logo-img">
-            </div>
+            <a href="index.html" class="logo">
+                <img src="images/bookly-logo3.png" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
                 <li><a href="books_list.html">Our Books</a></li>
 
             </ul>
             <div class="auth-buttons">
                 <button class="login"><a href="login.html">Login</a></button>
                 <button class="signup"><a href="register.html">Sign Up</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="register">
+        <form class="register-form">
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password"
+                    required>
+            </div>
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books. Join our community of book
+                        lovers today.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="books_list.html">Books</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +20 106 150 9572</li>
+                        <li><i class="fas fa-envelope"></i> contact@bookly.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> FCAI-Cairo University</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
             </div>
         </div>
     </div>
