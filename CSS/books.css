@@ -217,6 +217,57 @@ body::before {
     color: #fff;
 }
 
+.search-section {
+    padding: 2rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-input {
+    width: 100%;
+    padding: 1rem 3rem 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 30px;
+    color: var(--fourth-color);
+    font-size: 1rem;
+    transition: all var(--transition-duration) ease;
+}
+
+.search-input::placeholder {
+    color: rgba(245, 239, 231, 0.7);
+}
+
+.search-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.search-icon {
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--fourth-color);
+    font-size: 1.2rem;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        margin: 0 1rem;
+    }
+}
+
 .books-section {
     padding: var(--section-padding) 0;
     position: relative;
