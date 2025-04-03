@@ -35,35 +35,86 @@ function displayBooks() {
     const startIndex = (currentPage - 1) * booksPerPage;
     const endIndex = startIndex + booksPerPage;
     const currentBooks = books.slice(startIndex, endIndex);
-    
+
     booksGrid.innerHTML = '';
 
     currentBooks.forEach(book => {
         const bookCard = document.createElement('a');
-        bookCard.href = `book-details.html?id=${encodeURIComponent(book.title)}`;
+        bookCard.href = `book.html?id=${encodeURIComponent(book.title)}`;
         bookCard.className = 'book-card';
 
+        // Check if book is in visited list
+        if (localStorage.getItem(`visited-${book.title}`)) {
+            bookCard.setAttribute('data-visited', 'true');
+        }
+
+        // Add click handler to save visited state
+        bookCard.addEventListener('click', () => {
+            localStorage.setItem(`visited-${book.title}`, 'true');
+            bookCard.setAttribute('data-visited', 'true');
+        });
+
         const defaultImage = '../images/default-book.jpg';
-        const highResImage = book.thumbnail ? book.thumbnail.replace('zoom=1', 'zoom=2') : defaultImage;
+        const highResImage = book.thumbnail ? book.thumbnail
+            .replace('zoom=1', 'zoom=2')
+            .replace('edge=curl', 'edge=none')
+            .replace('&source=gbs_api', '&source=gbs_api&fife=w400-h600') : defaultImage;
 
         bookCard.innerHTML = `
-            <img src="${highResImage}" 
-                 alt="${book.title}" 
-                 class="book-thumbnail"
-                 loading="lazy"
-                 onerror="this.src='${defaultImage}'; this.onerror=null;"
-                 onload="this.style.opacity='1'">
-            <h3 class="book-title">${book.title}</h3>
+            <div class="book-image-container">
+                <img src="${highResImage}" 
+                     alt="${book.title}" 
+                     class="book-thumbnail"
+                     loading="lazy"
+                     onerror="this.src='${defaultImage}'; this.classList.add('fallback-image')"
+                     onload="this.classList.add('loaded')">
+            </div>
             <div class="book-info">
+                <h3 class="book-title" style = "color: #F5EFE7">${book.title}</h3>
                 <p class="book-authors">${book.authors ? book.authors.join(', ') : 'Unknown Author'}</p>
+                <div class="book-categories">
+                    ${book.categories ? book.categories.map(cat =>
+            `<span class="category-tag">${cat}</span>`).join('') : ''}
+                </div>
                 <span class="book-status">Available</span>
             </div>
         `;
+
+        // Add click event listener for analytics
+        bookCard.addEventListener('click', () => {
+            console.log(`Book clicked: ${book.title}`);
+            // You can add analytics tracking here
+        });
 
         booksGrid.appendChild(bookCard);
     });
 
     document.getElementById('currentPage').textContent = currentPage;
+}
+
+// Add search functionality
+function searchBooks(query) {
+    if (!query) {
+        displayBooks();
+        return;
+    }
+
+    const filteredBooks = books.filter(book =>
+        book.title.toLowerCase().includes(query.toLowerCase()) ||
+        (book.authors && book.authors.some(author =>
+            author.toLowerCase().includes(query.toLowerCase()))) ||
+        (book.categories && book.categories.some(category =>
+            category.toLowerCase().includes(query.toLowerCase())))
+    );
+
+    displayFilteredBooks(filteredBooks);
+}
+
+function displayFilteredBooks(filteredBooks) {
+    books = filteredBooks;
+    currentPage = 1;
+    displayBooks();
+    updatePaginationButtons();
 }
 
 function updatePaginationButtons() {

@@ -240,6 +240,7 @@ body::before {
     transition: transform var(--transition-duration) ease;
     cursor: pointer;
     text-decoration: none;
+    position: relative;
 }
 
 .book-card:hover {
@@ -271,16 +272,91 @@ body::before {
     margin: 1rem 0;
     font-weight: 600;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+.book-authors {
+    color: var(--fourth-color);
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    text-decoration: none;
+}
+
+.book-card:visited .book-title {
+    color: var(--fourth-color);
+    text-decoration: none;
+}
+
+.book-card:visited .book-title,
+.book-card:visited .book-authors {
+    color: var(--fourth-color);
+    text-decoration: none;
+}
+
+.book-info {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.book-title {
+    color: var(--fourth-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.book-authors {
+    color: var(--fourth-color);
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.book-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.category-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: var(--fourth-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .book-status {
-    display: inline-block;
-    padding: 0.5rem 1rem;
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 0.4rem 0.8rem;
     background: var(--main-color);
     color: var(--fourth-color);
     border-radius: 20px;
     font-size: 0.9rem;
-    margin-top: 0.5rem;
+    transition: background-color var(--transition-duration) ease;
+}
+
+.book-card[data-visited="true"] .book-title {
+    color: var(--secondary-color);
+    text-decoration: none;
 }
 
 .pagination {
@@ -298,6 +374,7 @@ body::before {
     border-radius: 8px;
     cursor: pointer;
     transition: all var(--transition-duration) ease;
+    text-decoration: none;
 }
 
 .pagination button:hover {
