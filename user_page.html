@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookly</title>
+    <link rel="stylesheet" href="CSS/user.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/bookly-logo3.png" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="books_list.html">Our Books</a></li>
+
+            </ul>
+            <div class="auth-buttons">
+                <button class="login"><a href="login.html">Login</a></button>
+                <button class="signup"><a href="register.html">Sign Up</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="container">
+            <div class="dashboard-grid">
+                <div class="dashboard-sidebar">
+                    <div class="user-info">
+                        <img src="images/default-avatar.png" alt="User Avatar" class="user-avatar">
+                        <h3 class="user-name">User Name</h3>
+                        <p class="user-email">email@example.com</p>
+                    </div>
+                    <nav class="dashboard-nav">
+                        <button class="nav-item active" data-tab="borrowed">
+                            <i class="fas fa-book"></i> Borrowed Books
+                        </button>
+                        <button class="nav-item" data-tab="settings">
+                            <i class="fas fa-cog"></i> Settings
+                        </button>
+                    </nav>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="dashboard-tab active" id="borrowed">
+                        <h2>Borrowed Books</h2>
+                        <div class="borrowed-books-grid" id="borrowedBooksGrid">
+                            <!-- Books will be added dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="dashboard-tab" id="settings">
+                        <h2>Account Settings</h2>
+                        <form class="settings-form">
+                            <div class="form-group">
+                                <label>Profile Picture</label>
+                                <input type="file" accept="image/*" id="profilePicture">
+                            </div>
+                            <div class="form-group">
+                                <label>Display Name</label>
+                                <input type="text" id="displayName" value="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" id="email" value="john.doe@example.com">
+                            </div>
+                            <button type="submit" class="save-settings">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books. Join our community of book
+                        lovers today.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="books_list.html">Books</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +20 106 150 9572</li>
+                        <li><i class="fas fa-envelope"></i> contact@bookly.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> FCAI-Cairo University</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/user.js"></script>
+</body>
+
+</html>
