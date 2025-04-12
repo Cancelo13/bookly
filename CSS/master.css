@@ -315,7 +315,7 @@ body::before {
     justify-content: center;
     position: relative;
     z-index: 2;
-    padding: 3rem;
+    padding: 48px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -426,7 +426,7 @@ body::before {
     margin-top: 30px;
     position: relative;
     z-index: 2;
-    padding: 3rem;
+    padding: 48px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -440,14 +440,14 @@ body::before {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 32px;
     max-width: 1200px;
 }
 
 .about .person-card {
     flex: 1;
     min-width: 300px;
-    padding: 2rem;
+    padding: 32px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -466,7 +466,7 @@ body::before {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     border: 3px solid var(--fourth-color);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
@@ -475,14 +475,14 @@ body::before {
     color: var(--fourth-color);
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .about .person-card .title {
     color: var(--secondary-color);
     font-size: 18px;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     font-style: italic;
 }
 
@@ -490,13 +490,13 @@ body::before {
     color: var(--fourth-color);
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .about .person-card .social-links {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .about .person-card .social-links a {
@@ -627,7 +627,7 @@ body::before {
 .contact .container {
     position: relative;
     z-index: 2;
-    padding: 3rem;
+    padding: 48px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -659,7 +659,7 @@ body::before {
 .contact .container {
     position: relative;
     z-index: 2;
-    padding: 3rem;
+    padding: 48px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -670,15 +670,15 @@ body::before {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 32px;
     animation: float 6s ease-in-out infinite;
 }
 
 .contact .contact-info {
-    padding-right: 2rem;
+    padding-right: 32px;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 .contact .contact-info .info-item {
@@ -712,26 +712,26 @@ body::before {
 }
 
 .contact .contact-info {
-    padding-right: 2rem;
+    padding-right: 32px;
 }
 
 .contact .contact-info .info-item {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
     color: var(--fourth-color);
 }
 
 .contact .contact-info .info-item i {
     font-size: 24px;
-    margin-right: 1rem;
+    margin-right: 16px;
     color: var(--secondary-color);
 }
 
 .contact .contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .contact .contact-form input,
@@ -780,7 +780,7 @@ body::before {
 
     .contact .contact-info {
         padding-right: 0;
-        padding-bottom: 2rem;
+        padding-bottom: 32px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     }
 }
@@ -788,7 +788,7 @@ body::before {
 .footer {
     position: relative;
     z-index: 1;
-    padding: 3rem 0 2rem;
+    padding: 48px 0 32px;
     background: transparent;
 }
 
@@ -811,21 +811,21 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 32px;
+    margin-bottom: 16px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .footer-section h3 {
     color: var(--fourth-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -847,16 +847,16 @@ body::before {
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .footer-social {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .footer-social a {
-    font-size: 1.5rem;
+    font-size: 24px;
     transition: transform var(--transition-duration) ease;
 }
 
@@ -866,13 +866,13 @@ body::before {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
     color: var(--fourth-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {

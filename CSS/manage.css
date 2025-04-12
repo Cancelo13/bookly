@@ -301,15 +301,15 @@ body::before {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid var(--glass-border);
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 32px;
+    margin-bottom: 32px;
 }
 
 .manage-books h1 {
     text-align: center;
     color: var(--fourth-color);
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+    margin-bottom: 32px;
+    font-size: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -321,26 +321,26 @@ body::before {
     -webkit-backdrop-filter: blur(5px);
     border-radius: 15px;
     border: 1px solid var(--glass-border);
-    padding: 2rem;
+    padding: 32px;
     max-width: 600px;
     margin: 0 auto;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .form-group label {
     display: block;
     color: var(--fourth-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     font-weight: 500;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 12px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid var(--glass-border);
     border-radius: 8px;
@@ -362,12 +362,12 @@ body::before {
 
 .submit-btn {
     width: 100%;
-    padding: 1rem;
+    padding: 16px;
     background: var(--main-color);
     color: var(--fourth-color);
     border: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 17px;
     font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-duration);
@@ -382,8 +382,8 @@ body::before {
 .books-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    gap: 32px;
+    padding: 16px;
 }
 
 .book-card {
@@ -408,30 +408,30 @@ body::before {
 }
 
 .book-info {
-    padding: 1.5rem;
+    padding: 24px;
 }
 
 .book-info h3 {
     color: var(--fourth-color);
-    margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
+    margin: 0 0 8px 0;
+    font-size: 19px;
 }
 
 .book-info p {
     color: var(--secondary-color);
-    margin: 0 0 1rem 0;
-    font-size: 0.9rem;
+    margin: 0 0 16px 0;
+    font-size: 14px;
 }
 
 .book-actions {
     display: flex;
-    gap: 1rem;
-    padding: 0 1.5rem 1.5rem;
+    gap: 16px;
+    padding: 0 24px 24px;
 }
 
 .book-actions button {
     flex: 1;
-    padding: 0.8rem;
+    padding: 12px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -462,18 +462,18 @@ body::before {
     }
 
     .book-form {
-        padding: 1.5rem;
+        padding: 24px;
     }
 
     .manage-books .container {
-        padding: 1rem;
+        padding: 24px;
     }
 }
 
 .footer {
     position: relative;
     z-index: 1;
-    padding: 3rem 0 2rem;
+    padding: 48px 0 32px;
     background: transparent;
 }
 
@@ -496,21 +496,21 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 32px;
+    margin-bottom: 16px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .footer-section h3 {
     color: var(--fourth-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -532,16 +532,16 @@ body::before {
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .footer-social {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .footer-social a {
-    font-size: 1.5rem;
+    font-size: 24px;
     transition: transform var(--transition-duration) ease;
 }
 
@@ -551,13 +551,13 @@ body::before {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
     color: var(--fourth-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {

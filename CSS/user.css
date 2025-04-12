@@ -299,55 +299,55 @@ body::before {
 .dashboard-grid {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 2rem;
+    gap: 32px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
+    padding: 32px;
 }
 
 /* Sidebar Styles */
 .dashboard-sidebar {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 24px;
 }
 
 .user-info {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 .user-avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     border: 3px solid var(--main-color);
 }
 
 .user-name {
     color: var(--fourth-color);
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 
 .user-email {
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 .dashboard-nav {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 .nav-item {
     background: transparent;
     border: none;
-    padding: 1rem;
+    padding: 16px;
     color: var(--fourth-color);
     border-radius: 8px;
     cursor: pointer;
@@ -363,7 +363,7 @@ body::before {
 .dashboard-content {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 32px;
 }
 
 .dashboard-tab {
@@ -377,45 +377,45 @@ body::before {
 .borrowed-books-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 24px;
+    margin-top: 24px;
 }
 
 .dashboard-content h2 {
     color: var(--fourth-color);
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 32px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .borrowed-book {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 16px;
     position: relative;
 }
 
 .deadline {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 16px;
+    right: 16px;
     background: var(--main-color);
     color: var(--fourth-color);
-    padding: 0.3rem 0.6rem;
+    padding: 4px 8px;
     border-radius: 12px;
-    font-size: 0.8rem;
+    font-size: 12px;
 }
 
 .settings-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 .form-group label {
@@ -423,7 +423,7 @@ body::before {
 }
 
 .form-group input {
-    padding: 0.8rem;
+    padding: 12px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.05);
@@ -450,7 +450,7 @@ body::before {
     background: var(--main-color);
     color: var(--fourth-color);
     border: none;
-    padding: 1rem;
+    padding: 16px;
     border-radius: 8px;
     cursor: pointer;
     transition: all var(--transition-duration) ease;
@@ -488,7 +488,7 @@ body::before {
 .footer {
     position: relative;
     z-index: 1;
-    padding: 3rem 0 2rem;
+    padding: 48px 0 32px;
     background: transparent;
 }
 
@@ -511,21 +511,21 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 32px;
+    margin-bottom: 16px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .footer-section h3 {
     color: var(--fourth-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -547,16 +547,16 @@ body::before {
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .footer-social {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .footer-social a {
-    font-size: 1.5rem;
+    font-size: 24px;
     transition: transform var(--transition-duration) ease;
 }
 
@@ -566,13 +566,13 @@ body::before {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
     color: var(--fourth-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {

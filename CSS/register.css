@@ -317,7 +317,7 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 3rem;
+    padding: 48px;
     width: 100%;
     max-width: 500px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -325,21 +325,21 @@ body::before {
 
 .register-form h2 {
     color: var(--fourth-color);
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 40px;
+    margin-bottom: 32px;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .form-group label {
     display: block;
     color: var(--fourth-color);
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
+    margin-bottom:8px;
+    font-size: 16px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -350,7 +350,7 @@ body::before {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     color: var(--fourth-color);
-    font-size: 1rem;
+    font-size: 16px;
     transition: all var(--transition-duration) ease;
 }
 
@@ -377,10 +377,10 @@ body::before {
     color: var(--fourth-color);
     border: none;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 17px;
     cursor: pointer;
     transition: all var(--transition-duration) ease;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 
 .register-btn:hover {
@@ -390,8 +390,8 @@ body::before {
 
 @media (max-width: 576px) {
     .register-form {
-        margin: 1rem;
-        padding: 2rem;
+        margin: 16px;
+        padding: 32px;
     }
 }
 
@@ -399,7 +399,7 @@ body::before {
 .footer {
     position: relative;
     z-index: 1;
-    padding: 3rem 0 2rem;
+    padding: 48px 0 32px;
     background: transparent;
 }
 
@@ -422,21 +422,21 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 32px;
+    margin-bottom: 16px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .footer-section h3 {
     color: var(--fourth-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -458,16 +458,16 @@ body::before {
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .footer-social {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .footer-social a {
-    font-size: 1.5rem;
+    font-size: 24px;
     transition: transform var(--transition-duration) ease;
 }
 
@@ -477,13 +477,13 @@ body::before {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
     color: var(--fourth-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {

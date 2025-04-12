@@ -290,7 +290,7 @@ body::before {
 .footer {
     position: relative;
     z-index: 1;
-    padding: 3rem 0 2rem;
+    padding: 48px 0 32px;
     background: transparent;
 }
 
@@ -313,21 +313,21 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 32px;
+    margin-bottom: 16px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .footer-section h3 {
     color: var(--fourth-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -349,16 +349,16 @@ body::before {
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .footer-social {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .footer-social a {
-    font-size: 1.5rem;
+    font-size: 24px;
     transition: transform var(--transition-duration) ease;
 }
 
@@ -368,13 +368,13 @@ body::before {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
     color: var(--fourth-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -401,14 +401,14 @@ body::before {
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
     border: 1px solid var(--glass-border);
-    padding: 2rem;
+    padding: 32px;
 }
 
 .admin-dashboard h1 {
     text-align: center;
     color: var(--fourth-color);
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
+    margin-bottom: 32px;
+    font-size: 40 px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -416,8 +416,8 @@ body::before {
 .dashboard-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 1rem;
+    gap: 32px;
+    padding: 16px;
 }
 
 .dashboard-card {
@@ -426,7 +426,7 @@ body::before {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid var(--glass-border);
     border-radius: 15px;
-    padding: 2rem;
+    padding: 32px;
     text-align: center;
     transition: all var(--transition-duration);
 }
@@ -438,26 +438,26 @@ body::before {
 }
 
 .dashboard-card i {
-    font-size: 3rem;
+    font-size: 48px;
     color: var(--fourth-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .dashboard-card h2 {
     color: var(--fourth-color);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 16px;
+    font-size: 24px;
 }
 
 .dashboard-card p {
     color: var(--secondary-color);
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
+    margin-bottom: 24px;
+    font-size: 16px;
 }
 
 .dashboard-btn {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 12px 24px;
     background: var(--main-color);
     color: var(--fourth-color);
     text-decoration: none;
@@ -483,55 +483,55 @@ body::before {
 .dashboard-grid {
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 2rem;
+    gap: 32px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
+    padding: 32px;
 }
 
 /* Sidebar Styles */
 .dashboard-sidebar {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 1.5rem;
+    padding: 24px;
 }
 
 .user-info {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
 }
 
 .user-avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     border: 3px solid var(--main-color);
 }
 
 .user-name {
     color: var(--fourth-color);
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 
 .user-email {
     color: var(--secondary-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 .dashboard-nav {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
 .nav-item {
     background: transparent;
     border: none;
-    padding: 1rem;
+    padding: 16px;
     color: var(--fourth-color);
     border-radius: 8px;
     cursor: pointer;
@@ -555,7 +555,7 @@ body::before {
 .dashboard-content {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    padding: 2rem;
+    padding: 32px;
 }
 
 .dashboard-tab {
@@ -568,8 +568,8 @@ body::before {
 
 .dashboard-content h2 {
     color: var(--fourth-color);
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 32px;
+    margin-bottom: 24px;
     text-align: center;
 }
 
@@ -577,13 +577,13 @@ body::before {
 .books-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 .book-card {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
-    padding: 1rem;
+    padding: 16px;
     transition: transform var(--transition-duration) ease;
 }
 
@@ -596,29 +596,29 @@ body::before {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 .book-info h3 {
     color: var(--fourth-color);
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 
 .book-info p {
     color: var(--secondary-color);
-    margin: 0.25rem 0;
+    margin: 4px 0;
 }
 
 .book-actions {
     display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
+    gap: 16px;
+    margin-top: 16px;
 }
 
 .edit-btn,
 .delete-btn {
     flex: 1;
-    padding: 0.5rem;
+    padding: 8px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -645,26 +645,26 @@ body::before {
 .book-form,
 .settings-form {
     background: rgba(255, 255, 255, 0.05);
-    padding: 2rem;
+    padding: 32px;
     border-radius: 12px;
     max-width: 600px;
     margin: 0 auto;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
 }
 
 .form-group label {
     display: block;
     color: var(--fourth-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 12px;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.05);
@@ -687,12 +687,12 @@ body::before {
 .submit-btn,
 .save-settings {
     width: 100%;
-    padding: 1rem;
+    padding: 16px;
     border: none;
     border-radius: 8px;
     background: var(--main-color);
     color: var(--fourth-color);
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
     transition: all var(--transition-duration) ease;
 }
@@ -707,7 +707,7 @@ body::before {
 .users-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
+    gap: 24px;
 }
 
 /* Responsive Styles */
@@ -717,6 +717,6 @@ body::before {
     }
 
     .dashboard-sidebar {
-        margin-bottom: 1.5rem;
+        margin-bottom: 24px;
     }
 }

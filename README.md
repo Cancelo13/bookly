@@ -1,6 +1,6 @@
 # bookly
 Bookly is an Online Library :) 
-
+Build using HTML/CSS/JS - Django
 
 # Creating Account
 -

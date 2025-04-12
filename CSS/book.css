@@ -301,10 +301,10 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
+    padding: 32px;
     display: grid;
     grid-template-columns: 300px 1fr;
-    gap: 2rem;
+    gap: 32px;
 }
 
 .book-cover {
@@ -313,7 +313,7 @@ body::before {
     object-fit: contain;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.05);
-    padding: 1rem;
+    padding: 16px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 
@@ -322,57 +322,57 @@ body::before {
 }
 
 .book-info h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 40px;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .book-info .authors {
-    font-size: 1.2rem;
+    font-size: 19px;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 .book-info .categories {
     display: flex;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    gap: 8px;
+    margin-bottom: 16px;
 }
 
 .category-tag {
     background: var(--main-color);
     color: var(--fourth-color);
-    padding: 0.3rem 0.8rem;
+    padding: 4px 12px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 .book-status {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 8px 16px;
     background: var(--third-color);
     color: var(--fourth-color);
     border-radius: 8px;
-    margin: 1rem 0;
+    margin: 16px 0;
 }
 
 .book-description {
-    margin-top: 2rem;
+    margin-top: 32px;
     line-height: 1.8;
 }
 
 .book-actions {
-    margin-top: 2rem;
+    margin-top: 32px;
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .book-actions button {
-    padding: 0.8rem 1.5rem;
+    padding: 12px 24px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 16px;
     transition: all var(--transition-duration) ease;
 }
 
@@ -399,7 +399,7 @@ body::before {
 .footer {
     position: relative;
     z-index: 1;
-    padding: 3rem 0 2rem;
+    padding: 48px 0 32px;
     background: transparent;
 }
 
@@ -422,21 +422,21 @@ body::before {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
-    margin-bottom: 1rem;
+    padding: 32px;
+    margin-bottom: 16px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .footer-section h3 {
     color: var(--fourth-color);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -458,16 +458,16 @@ body::before {
 }
 
 .footer-links li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 .footer-social {
     display: flex;
-    gap: 1rem;
+    gap: 16px;
 }
 
 .footer-social a {
-    font-size: 1.5rem;
+    font-size: 24px;
     transition: transform var(--transition-duration) ease;
 }
 
@@ -477,13 +477,13 @@ body::before {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 32px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom p {
     color: var(--fourth-color);
-    font-size: 0.9rem;
+    font-size: 14px;
 }
 
 @media (max-width: 768px) {
