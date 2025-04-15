@@ -2,8 +2,8 @@
     {
         "id": 13,
         "name": "Mohamed Magdy",
-        "email": "mohamedmagdy6674@gmail.com",
-        "password": "MohamedMagdy123",
+        "email": "admin@bookly.com",
+        "password": "admin123",
         "avatar": "images/mohamed-magdy.png",
         "borrowedBooks": [
             {
