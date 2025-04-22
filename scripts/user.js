@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadUserData()
         .then(() => {
             setupTabSwitching();
-            setupDarkMode();
             loadBorrowedBooks();
         })
         .catch(error => {
@@ -17,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             const tabId = item.getAttribute('data-tab');
 
-            // Update active states
             navItems.forEach(nav => nav.classList.remove('active'));
             tabs.forEach(tab => tab.classList.remove('active'));
 
@@ -34,7 +32,12 @@ async function loadUserData() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const users = await response.json();
-        currentUser = users[0];
+        localStorage.setItem('users', JSON.stringify(users));
+        const currentUserName = localStorage.getItem('currentUser');
+        const currentUser = users.find(user => user.name === currentUserName);
+        if (!currentUser) {
+            throw new Error('User not found');
+        }
 
         document.querySelector('.user-avatar').src = currentUser.avatar;
         document.querySelector('.user-name').textContent = currentUser.name;
