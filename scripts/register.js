@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const newUser = await registerUser(userNameInput, passwordInput, emailInput);
 
             setCookie('userData', JSON.stringify({
-                userName: newUser.name,
+                username: newUser.username,
+                name: newUser.name,
                 password: newUser.password,
                 email: newUser.email,
                 id: newUser.id,
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 isAdmin: newUser.isAdmin
             }), 7);
 
-            setCookie('isLoggedIn', true, 7);
+            //setCookie('isLoggedIn', true, 7);
 
             showSuccess('Registration successful! You can now log in.');
             setTimeout(() => {
@@ -103,12 +104,12 @@ function validateUserName(userNameInput, usersNamesArray) {
 
 async function registerUser(userNameInput, passwordInput, emailInput) {
     const newUser = {
-        id: Date.now() % 10000,
+        id: Date.now(),
         name: userNameInput,
         username: userNameInput.toLowerCase(),
         password: passwordInput,
         email: emailInput,
-        avatar: '../images/default_avatar.png',
+        avatar: "images/default-avatar.png",
         borrowedBooks: [],
         settings: {
             darkMode: false
@@ -126,6 +127,7 @@ async function registerUser(userNameInput, passwordInput, emailInput) {
         setCookie('userData', JSON.stringify(newUser), 7);
         createSession(newUser);
         return newUser;
+
     } catch (error) {
         console.error('Error saving user data:', error);
         throw new Error('Failed to save user data: ' + error.message);

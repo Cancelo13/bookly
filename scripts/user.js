@@ -27,14 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 async function loadUserData() {
     try {
-        const response = await fetch('../Data/users.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const users = await response.json();
-        localStorage.setItem('users', JSON.stringify(users));
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
         const currentUserName = localStorage.getItem('currentUser');
-        const currentUser = users.find(user => user.name === currentUserName);
+
+        const currentUser = users.find(user =>
+            user.username.toLowerCase() === currentUserName.toLowerCase() ||
+            user.name.toLowerCase() === currentUserName.toLowerCase()
+        );
+
         if (!currentUser) {
             throw new Error('User not found');
         }

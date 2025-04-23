@@ -3,7 +3,6 @@ let currentPage = 1;
 let books = [];
 let originalBooks = [];
 
-// Load books when the page loads
 document.addEventListener('DOMContentLoaded', loadBooks);
 document.getElementById('searchInput').addEventListener('input', (e) => {
     searchBooks(e.target.value.trim());

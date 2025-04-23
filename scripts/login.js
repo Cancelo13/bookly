@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     loadUserData()
         .then(userData => {
-            users = userData;
-            localStorage.setItem('users', JSON.stringify(userData));
+            const localUsers = JSON.parse(localStorage.getItem('users') || '[]');
+
+            users = userData.concat(localUsers.filter(user => !userData.some(u => u.username === user.username)));
+            localStorage.setItem('users', JSON.stringify(users));
         })
         .catch(error => {
             console.error('Error loading user data:', error);
@@ -24,33 +26,31 @@ document.querySelector('.login-form').addEventListener('submit', (e) => {
         return;
     }
 
-    if (checkUser(userNameInput, passwordInput, users)) {
+    if (checkCookieUser(userNameInput, passwordInput)) {
         localStorage.setItem('currentUser', userNameInput);
         setCookie('isLoggedIn', true, 7);
         window.location.href = 'user_page.html';
-    } else if (checkCookieUser(userNameInput, passwordInput)) {
-        localStorage.setItem('currentUser', userNameInput);
-        setCookie('isLoggedIn', true, 7);
-        window.location.href = 'user_page.html';
-    }
-    else {
+    } else {
         showError('Invalid username or password');
     }
 });
 
 function checkCookieUser(userNameInput, passwordInput) {
     try {
-        const users = localStorage.getItem('users');
-        if (!users) {
-            return false;
-        }
-        return users.some(user =>
-            user.name === userNameInput &&
+        const users = JSON.parse(localStorage.getItem('users') || '[]');
+        const user = users.find(user =>
+            (user.username.toLowerCase() === userNameInput.toLowerCase() ||
+                user.name.toLowerCase() === userNameInput.toLowerCase()) &&
             user.password === passwordInput
         );
 
+        if (user) {
+            createSession(user);
+            return true;
+        }
+        return false;
     } catch (error) {
-        console.error('Error parsing cookie data:', error);
+        console.error('Error checking user credentials:', error);
         return false;
     }
 }
