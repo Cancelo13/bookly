@@ -288,6 +288,309 @@ body::before {
     }
 }
 
+/* Add these styles to your existing CSS */
+.main-content {
+    position: relative;
+    z-index: 1;
+    min-height: calc(100vh - 200px);
+    padding: 40px 0;
+}
+
+.main-content h1 {
+    color: var(--fourth-color);
+    font-size: 36px;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 30px;
+    padding: 5px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    color: var(--fourth-color);
+    font-size: 16px;
+}
+
+.search-container input::placeholder {
+    color: var(--fourth-color);
+    opacity: 0.7;
+}
+
+.search-container #search-btn {
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.search-container #search-btn i {
+    color: var(--fourth-color);
+    font-size: 18px;
+}
+
+.search-container #search-btn:hover {
+    transform: scale(1.1);
+}
+
+.search-container input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.user-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+.user-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    flex: 1;
+    color: var(--main-color);
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.input-group input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    color: var(--fourth-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.input-group input:disabled {
+    color: var(--fourth-color);
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.input-group label {
+    color: var(--main-color);
+    font-weight: 600;
+    min-width: 100px;
+}
+
+.edit-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--fourth-color);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.edit-btn i {
+    font-size: 16px;
+}
+
+.edit-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.admin-status {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.admin-status:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+}
+
+.admin-status i {
+    font-size: 20px;
+}
+
+.save-changes-btn {
+    background: rgba(33, 53, 85, 0.8);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.save-changes-btn:hover {
+    background: rgba(62, 88, 121, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 30px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+}
+
+.modal-content h2 {
+    color: var(--fourth-color);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+#admin-verification-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#admin-verification-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--fourth-color);
+    font-size: 16px;
+}
+
+#admin-verification-form input::placeholder {
+    color: rgba(245, 239, 231, 0.7);
+}
+
+#admin-verification-form input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.modal-buttons button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.save-btn {
+    background: var(--main-color);
+    color: var(--fourth-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.save-btn:hover {
+    background: var(--third-color);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--fourth-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cancel-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.save-changes-btn {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.save-changes-btn:hover {
+    background: var(--third-color);
+}
+
 .footer {
     position: relative;
     z-index: 1;

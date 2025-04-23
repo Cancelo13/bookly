@@ -7,7 +7,7 @@
     <title>Manage Books - Bookly</title>
     <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/all.min.css">
-    <link rel="stylesheet" href="CSS/manage.css">
+    <link rel="stylesheet" href="CSS/manage_users.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
@@ -37,6 +37,37 @@
                     <i class="fas fa-user"></i>
                 </a>
             </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>Manage Users</h1>
+            <div class="search-container">
+                <div class="search-container">
+                    <input type="text" id="search-user" placeholder="Enter user ID">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="user-result">
+                <!-- User info will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="admin-verification-modal" class="modal">
+        <div class="modal-content">
+            <h2>Admin Verification Required</h2>
+            <form id="admin-verification-form">
+                <input type="text" id="admin-username" placeholder="Admin Username" required>
+                <input type="password" id="admin-password" placeholder="Admin Password" required>
+                <div class="modal-buttons">
+                    <button type="submit" class="save-btn" id = "save-btn">Verify & Save</button>
+                    <button type="button" class="cancel-btn" id = "cancel-btn">Cancel</button>
+                </div>
+            </form>
         </div>
     </div>
 
