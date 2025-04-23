@@ -1,6 +1,7 @@
 let users = [];
 
 document.addEventListener('DOMContentLoaded', () => {
+
     loadUserData()
         .then(userData => {
             users = userData;
@@ -25,9 +26,11 @@ document.querySelector('.login-form').addEventListener('submit', (e) => {
 
     if (checkUser(userNameInput, passwordInput, users)) {
         localStorage.setItem('currentUser', userNameInput);
+        setCookie('isLoggedIn', true, 7);
         window.location.href = 'user_page.html';
     } else if (checkCookieUser(userNameInput, passwordInput)) {
         localStorage.setItem('currentUser', userNameInput);
+        setCookie('isLoggedIn', true, 7);
         window.location.href = 'user_page.html';
     }
     else {

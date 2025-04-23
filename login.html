@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/master.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -33,6 +34,10 @@
             <div class="auth-buttons">
                 <button class="login"><a href="login.html">Login</a></button>
                 <button class="signup"><a href="register.html">Sign Up</a></button>
+                <button class="logout" style="display:none">Logout</button>
+                <a href="user_page.html" class="user-icon" style="display:none">
+                    <i class="fas fa-user"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -101,6 +106,7 @@
         </div>
     </div>
     <script src="scripts/cookies.js"></script>
+    <script src="scripts/auth.js"></script>
     <script src="scripts/login.js"></script>
 </body>
 
