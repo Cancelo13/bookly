@@ -8,28 +8,51 @@ document.getElementById('searchInput').addEventListener('input', (e) => {
     searchBooks(e.target.value.trim());
 });
 
-function loadBooks() {
-    fetch('../Data/books.json')
-        .then(response => {
+async function loadBooks() {
+    try {
+        const storedBooks = localStorage.getItem('books');
+
+        if (!storedBooks || JSON.parse(storedBooks).length === 0) {
+            const response = await fetch('./Data/books.json'); 
+
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            return response.json();
-        })
-        .then(data => {
-            originalBooks = data.filter(book => book && book.title && book.thumbnail);
-            books = [...originalBooks]; // Create a copy
-            console.log('Books loaded:', books.length);
-            displayBooks();
-            updatePaginationButtons();
-        })
-        .catch(error => {
-            console.error('Error loading books:', error);
-            document.getElementById('booksGrid').innerHTML =
-                `<p style="color: var(--fourth-color); text-align: center;">
-                    Error loading books: ${error.message}
-                </p>`;
-        });
+
+            const jsonBooks = await response.json();
+
+            books = jsonBooks.map(book => ({
+                id: Date.now().toString() + Math.random().toString(36).substr(2, 9),
+                title: book.title || 'Untitled',
+                author: Array.isArray(book.authors) && book.authors.length > 0
+                    ? book.authors.join(', ')
+                    : 'Unknown',
+                description: book.description || 'No description available',
+                categories: Array.isArray(book.categories) && book.categories.length > 0
+                    ? book.categories.join(', ')
+                    : 'Uncategorized',
+                thumbnail: book.thumbnail || './images/default-book-cover.jpg',
+                is_borrowed: false
+            }));
+
+            localStorage.setItem('books', JSON.stringify(books));
+        } else {
+            books = JSON.parse(storedBooks);
+        }
+
+        originalBooks = [...books];
+
+        displayBooks();
+        updatePaginationButtons();
+
+    } catch (error) {
+        console.error('Error loading books:', error);
+        console.log('Response:', error.response);
+        books = [];
+        originalBooks = [];
+        displayBooks();
+        updatePaginationButtons();
+    }
 }
 
 function displayBooks() {
@@ -62,6 +85,12 @@ function displayBooks() {
                 .replace('&source=gbs_api', '&source=gbs_api&fife=w400-h600')
             : defaultImage;
 
+        const categoriesArray = typeof book.categories === 'string'
+            ? book.categories.split(', ')
+            : Array.isArray(book.categories)
+                ? book.categories
+                : [];
+
         bookCard.innerHTML = `
             <div class="book-image-container">
                 <img src="${highResImage}" 
@@ -73,12 +102,15 @@ function displayBooks() {
             </div>
             <div class="book-info">
                 <h3 class="book-title" style="color: #F5EFE7">${book.title}</h3>
-                <p class="book-authors">${book.authors ? book.authors.join(', ') : 'Unknown Author'}</p>
+                <p class="book-authors">${book.author || 'Unknown Author'}</p>
                 <div class="book-categories">
-                    ${book.categories ? book.categories.map(cat =>
-            `<span class="category-tag">${cat}</span>`).join('') : ''}
+                    ${categoriesArray.length > 0
+                ? categoriesArray.map(cat => `<span class="category-tag">${cat}</span>`).join('')
+                : '<span class="category-tag">Uncategorized</span>'}
                 </div>
-                <span class="book-status">Available</span>
+                <span class="book-status ${book.is_borrowed ? 'borrowed' : 'available'}">
+                    ${book.is_borrowed ? 'Borrowed' : 'Available'}
+                </span>
             </div>
         `;
 
@@ -86,6 +118,7 @@ function displayBooks() {
     });
 
     document.getElementById('currentPage').textContent = currentPage;
+    updatePaginationButtons();
 }
 
 function searchBooks(query) {
@@ -97,13 +130,18 @@ function searchBooks(query) {
         return;
     }
 
-    const filteredBooks = originalBooks.filter(book =>
-        book.title.toLowerCase().includes(query.toLowerCase()) ||
-        (book.authors && book.authors.some(author =>
-            author.toLowerCase().includes(query.toLowerCase()))) ||
-        (book.categories && book.categories.some(category =>
-            category.toLowerCase().includes(query.toLowerCase())))
-    );
+    query = query.toLowerCase();
+    const filteredBooks = originalBooks.filter(book => {
+        const titleMatch = book.title.toLowerCase().includes(query);
+        const authorMatch = book.author.toLowerCase().includes(query);
+
+        const categoriesMatch = typeof book.categories === 'string'
+            ? book.categories.toLowerCase().includes(query)
+            : Array.isArray(book.categories) && book.categories.some(category =>
+                category.toLowerCase().includes(query));
+
+        return titleMatch || authorMatch || categoriesMatch;
+    });
 
     books = filteredBooks;
     currentPage = 1;

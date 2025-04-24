@@ -187,11 +187,9 @@ function saveChanges(adminUsername, adminPassword) {
 }
 
 function showError(message) {
-    console.error(message);
     alert(message);
 }
 
 function showSuccess(message) {
-    console.log(message);
     alert(message);
 }

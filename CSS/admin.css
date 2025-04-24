@@ -472,7 +472,6 @@ body::before {
     transform: scale(1.05);
 }
 
-/* Dashboard Styles */
 .dashboard {
     padding: var(--section-padding) 0;
     min-height: calc(100vh - 300px);
@@ -492,7 +491,6 @@ body::before {
     padding: 32px;
 }
 
-/* Sidebar Styles */
 .dashboard-sidebar {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
@@ -551,7 +549,6 @@ body::before {
     background: var(--main-color);
 }
 
-/* Content Styles */
 .dashboard-content {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
@@ -573,7 +570,6 @@ body::before {
     text-align: center;
 }
 
-/* Book Grid Styles */
 .books-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -641,7 +637,6 @@ body::before {
     transform: translateY(-2px);
 }
 
-/* Form Styles */
 .book-form,
 .settings-form {
     background: rgba(255, 255, 255, 0.05);
@@ -703,14 +698,12 @@ body::before {
     transform: translateY(-2px);
 }
 
-/* Users Grid Styles */
 .users-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .dashboard-grid {
         grid-template-columns: 1fr;

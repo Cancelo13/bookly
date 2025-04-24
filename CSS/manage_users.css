@@ -288,7 +288,6 @@ body::before {
     }
 }
 
-/* Add these styles to your existing CSS */
 .main-content {
     position: relative;
     z-index: 1;

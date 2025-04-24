@@ -288,7 +288,6 @@ body::before {
     }
 }
 
-/* Dashboard Styles */
 .dashboard {
     padding: var(--section-padding) 0;
     min-height: calc(100vh - 300px);
@@ -308,7 +307,6 @@ body::before {
     padding: 32px;
 }
 
-/* Sidebar Styles */
 .dashboard-sidebar {
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
