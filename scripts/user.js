@@ -44,8 +44,6 @@ async function loadUserData() {
         document.querySelector('.user-email').textContent = currentUser.email;
         document.getElementById('displayName').value = currentUser.name;
         document.getElementById('email').value = currentUser.email;
-        document.getElementById('darkMode').checked = currentUser.settings.darkMode;
-
     } catch (error) {
         throw new Error('Failed to load user data: ' + error.message);
     }

@@ -78,7 +78,7 @@ function showError(message) {
 
 async function loadUserData() {
     try {
-        const response = await fetch('../Data/users.json');
+        const response = await fetch('./Data/users.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
