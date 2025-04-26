@@ -6,21 +6,7 @@
         "email": "admin@bookly.com",
         "password": "admin123",
         "avatar": "images/mohamed-magdy.png",
-        "borrowedBooks": [
-            {
-                "title": "The World is Flat",
-                "deadline": "2024-04-15",
-                "thumbnail": "http://books.google.com/books/content?id=4p69QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-            },
-            {
-                "title": "Scale-Space Theory in Computer Vision",
-                "deadline": "2024-04-20",
-                "thumbnail": "http://books.google.com/books/content?id=u21OX41EbVkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-            }
-        ],
-        "settings": {
-            "darkMode": false
-        },
+        "borrowedBooks": [],
         "isAdmin": true
     },
     {
@@ -31,9 +17,6 @@
         "password": "admin123",
         "avatar": "images/mohamed-magdy.png",
         "borrowedBooks": [],
-        "settings": {
-            "darkMode": false
-        },
         "isAdmin": true
     },
     {
@@ -43,20 +26,7 @@
         "email": "john.doe@example.com",
         "password": "password123",
         "avatar": "images/default-avatar.png",
-        "borrowedBooks": [
-            {
-                "title": "The World is Flat",
-                "deadline": "2024-04-15",
-                "thumbnail": "http://books.google.com/books/content?id=4p69QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
-            },
-            {
-                "title": "Scale-Space Theory in Computer Vision",
-                "deadline": "2024-04-20",
-                "thumbnail": "http://books.google.com/books/content?id=u21OX41EbVkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-            }
-        ],
-        "settings": {
-            "darkMode": false
-        }
+        "borrowedBooks": [],
+        "isAdmin": false
     }
 ]
