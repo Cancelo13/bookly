@@ -183,26 +183,21 @@ def toggle_admin(request, user_id):
             user_to_update = User.objects.get(id=user_id)
             is_being_promoted = not user_to_update.is_staff
             
-            # If user is being promoted to admin, return all borrowed books
             if is_being_promoted:
                 try:
                     user_profile = UserProfile.objects.get(user=user_to_update)
                     borrowed_books = list(user_profile.books_borrowed.all())
                     
-                    # Return all books
                     print(f"Found {len(borrowed_books)} borrowed books to return")
                     for book in borrowed_books:
                         print(f"Processing book: {book.id} - {book.title}, Current availability: {book.is_available}")
                         
-                        # Make book available again
                         book.is_available = True
                         book.save()
                         print(f"After save, book availability: {book.is_available}")
                         
-                        # Remove from user's borrowed books
                         user_profile.books_borrowed.remove(book)
                         
-                        # Update borrow records
                         borrow_records = BorrowRecord.objects.filter(
                             user=user_to_update, 
                             book=book, 
@@ -213,22 +208,18 @@ def toggle_admin(request, user_id):
                             borrow_record.return_date = timezone.now()
                             borrow_record.save()
                             
-                        # Double-check book availability after all operations
                         book.refresh_from_db()
                         print(f"Final book availability check: {book.is_available}")
                         
-                        # Force update if still not available
                         if not book.is_available:
-                            print("Book still not available, forcing update")
                             Book.objects.filter(id=book.id).update(is_available=True)
                             
                     if borrowed_books:
                         messages.success(request, f"All borrowed books ({len(borrowed_books)}) have been returned as user is now an admin.")
                         
                 except UserProfile.DoesNotExist:
-                    pass  # No profile, so no books to return
+                    pass 
             
-            # Update user status
             user_to_update.is_staff = is_being_promoted
             user_to_update.save()
             
