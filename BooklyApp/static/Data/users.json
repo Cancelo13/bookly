@@ -1,0 +1,32 @@
+[
+    {
+        "id": 13,
+        "name": "Mohamed Magdy",
+        "username": "mohamedmagdy",
+        "email": "admin@bookly.com",
+        "password": "admin123",
+        "avatar": "images/mohamed-magdy.png",
+        "borrowedBooks": [],
+        "isAdmin": true
+    },
+    {
+        "id": 0,
+        "name": "Admin",
+        "username": "admin",
+        "email": "admin@bookly.com",
+        "password": "admin123",
+        "avatar": "images/mohamed-magdy.png",
+        "borrowedBooks": [],
+        "isAdmin": true
+    },
+    {
+        "id": 1,
+        "name": "John Doe",
+        "username": "johndoe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "avatar": "images/default-avatar.png",
+        "borrowedBooks": [],
+        "isAdmin": false
+    }
+]

@@ -1,0 +1,299 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - Bookly</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/manage_users.css' %}?v={% now 'U' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body {% if user.is_authenticated %}data-user-authenticated{% endif %}>
+    <div class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/bookly-logo3.png' %}" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#about">About us</a></li>
+                <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                <li class="books-page"><a href="{% url 'books_list' %}">Our Books</a></li>
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <li><a href="{% url 'admin_page' %}">Admin Page</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <div class="auth-buttons">
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: inline-block;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: none;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: inline-block;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: inline-block;"><a href="{% url 'register' %}">Sign Up</a></button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            {% csrf_token %}
+            <h1>Manage Users</h1>
+            <div class="search-container">
+                <div class="search-container">
+                    <input type="text" id="search-user" placeholder="Search by username">
+                    <button id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="users-list">
+                <h2>All Users</h2>
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Role</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user_item in users %}
+                        <tr class="user-row {% if forloop.counter|divisibleby:2 %}even-row{% endif %}">
+                            <td>{{ user_item.username }}</td>
+                            <td>{{ user_item.email }}</td>
+                            <td>{{ user_item.first_name }}</td>
+                            <td>{{ user_item.last_name }}</td>
+                            <td>{% if user_item.is_staff %}<span class="role-badge admin-role">Admin</span>{% else %}<span class="role-badge user-role">User</span>{% endif %}</td>
+                            <td>
+                                <form method="post" action="{% url 'toggle_admin' user_item.id %}">
+                                    {% csrf_token %}
+                                    <button type="submit" class="{% if user_item.is_staff %}make-user-btn{% else %}make-admin-btn{% endif %}">
+                                        {% if user_item.is_staff %}Make User{% else %}Make Admin{% endif %}
+                                    </button>
+                                </form>
+                                <button class="edit-user-btn" data-id="{{ user_item.id }}" data-username="{{ user_item.username|escapejs }}" data-email="{{ user_item.email|escapejs }}" data-firstname="{{ user_item.first_name|escapejs }}" data-lastname="{{ user_item.last_name|escapejs }}" data-isadmin="{{ user_item.is_staff|yesno:'true,false' }}">Edit</button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <div id="no-results-message" style="display: none;" class="no-results-message">
+                    No users found matching your search criteria.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="admin-verification-modal" class="modal">
+        <div class="modal-content">
+            <h2>Admin Verification Required</h2>
+            <form id="admin-verification-form">
+                <input type="text" id="admin-username" placeholder="Admin Username" required>
+                <input type="password" id="admin-password" placeholder="Admin Password" required>
+                <div class="modal-buttons">
+                    <button type="submit" class="save-btn" id = "save-btn">Verify & Save</button>
+                    <button type="button" class="cancel-btn" id = "cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Edit User Modal -->
+    <div id="edit-user-modal" class="modal">
+        <div class="modal-content">
+            <h2>Edit User</h2>
+            <form id="edit-user-form" method="post" style="margin: 0; padding: 20px;">
+                {% csrf_token %}
+                <input type="hidden" id="edit-user-id" name="user_id">
+                <div class="form-group">
+                    <label for="edit-username">Username:</label>
+                    <input type="text" id="edit-username" name="username" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="edit-email">Email:</label>
+                    <input type="email" id="edit-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="edit-first-name">First Name:</label>
+                    <input type="text" id="edit-first-name" name="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="edit-last-name">Last Name:</label>
+                    <input type="text" id="edit-last-name" name="last_name">
+                </div>
+                <div class="form-group">
+                    <label>Current Role:</label>
+                    <span id="edit-role-badge" class="role-badge"></span>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="save-btn">Save Changes</button>
+                    <button type="button" class="cancel-btn" id="close-edit-modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books. Join our community of book
+                        lovers today.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#about">About Us</a></li>
+                        <li><a href="{% url 'books_list' %}">Books</a></li>
+                        <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +20 106 150 9572</li>
+                        <li><i class="fas fa-envelope"></i> contact@bookly.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> FCAI-Cairo University</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/manage_users.js' %}?v={% now 'U' %}"></script>
+    <script src="{% static 'js/manage_users_new.js' %}?v={% now 'U' %}"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM fully loaded');
+            
+            const editButtons = document.querySelectorAll('.edit-user-btn');
+            console.log('Found edit buttons:', editButtons.length);
+            
+            editButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const userId = this.getAttribute('data-id');
+                    const username = this.getAttribute('data-username');
+                    const email = this.getAttribute('data-email');
+                    const firstName = this.getAttribute('data-firstname');
+                    const lastName = this.getAttribute('data-lastname');
+                    const isAdmin = this.getAttribute('data-isadmin') === 'true';
+                    
+                    console.log('Edit button clicked for:', username, 'ID:', userId);
+                    
+                    document.getElementById('edit-user-id').value = userId;
+                    document.getElementById('edit-username').value = username;
+                    document.getElementById('edit-email').value = email;
+                    document.getElementById('edit-first-name').value = firstName;
+                    document.getElementById('edit-last-name').value = lastName;
+                    
+                    const roleBadge = document.getElementById('edit-role-badge');
+                    roleBadge.textContent = isAdmin ? 'Admin' : 'User';
+                    roleBadge.className = 'role-badge ' + (isAdmin ? 'admin-role' : 'user-role');
+                    
+                    document.getElementById('edit-user-form').action = '/user/' + userId + '/update/';
+                    
+                    document.getElementById('edit-user-modal').style.display = 'block';
+                });
+            });
+            
+            const closeButton = document.getElementById('close-edit-modal');
+            if (closeButton) {
+                closeButton.addEventListener('click', function() {
+                    document.getElementById('edit-user-modal').style.display = 'none';
+                });
+            }
+            
+            window.addEventListener('click', function(event) {
+                const modal = document.getElementById('edit-user-modal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+            
+            const editForm = document.getElementById('edit-user-form');
+            if (editForm) {
+                editForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const form = this;
+                    const userId = document.getElementById('edit-user-id').value;
+                    const formData = new FormData(form);
+                    
+                    console.log('Submitting form for user ID:', userId);
+                    
+                    fetch('/user/' + userId + '/update/', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'X-Requested-With': 'XMLHttpRequest'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('User updated successfully!');
+                            window.location.reload();
+                        } else {
+                            alert('Error: ' + (data.error || 'Failed to update user'));
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('Error: ' + error.message);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Books - Bookly</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/manage.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body {% if user.is_authenticated %}data-user-authenticated{% endif %}>
+    <div class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/bookly-logo3.png' %}" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#about">About us</a></li>
+                <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                <li class="books-page"><a href="{% url 'books_list' %}">Our Books</a></li>
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <li><a href="{% url 'admin_page' %}">Admin Page</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <div class="auth-buttons">
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: inline-block;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: none;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: inline-block;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: inline-block;"><a href="{% url 'register' %}">Sign Up</a></button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="manage-books">
+        <div class="container">
+            <div id="add-book-section">
+                <h1>Add New Book</h1>
+                {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div class="alert alert-{% if message.tags %}{{ message.tags }}{% else %}info{% endif %}">
+                        {{ message }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+                <form method="POST" action="{% url 'manage_books' %}" enctype="multipart/form-data" class="book-form">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    <div class="form-group">
+                        {% if field.name == 'is_available' %}
+                            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                            <div class="availability-toggle">
+                                {{ field }}
+                                <label for="{{ field.id_for_label }}" class="toggle-label"></label>
+                                <span class="toggle-text">{% if field.value %}Available{% else %}Borrowed{% endif %}</span>
+                            </div>
+                            {% if field.help_text %}
+                            <small class="form-text text-muted">{{ field.help_text }}</small>
+                            {% endif %}
+                        {% else %}
+                            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                            {{ field }}
+                            {% if field.help_text %}
+                            <small class="form-text text-muted">{{ field.help_text }}</small>
+                            {% endif %}
+                        {% endif %}
+                        {% if field.errors %}
+                        <div class="error-message">
+                            {% for error in field.errors %}
+                            <p>{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    <button type="submit" class="submit-btn">Add Book</button>
+                </form>
+            </div>
+
+            <div id="manage-books-section">
+                <h1>Manage Books</h1>
+                <div class="books-list">
+                    {% if books %}
+                    {% for book in books %}
+                    <div class="book-card">
+                        <div class="book-thumbnail">
+                            {% if book.cover_image %}
+                            <img src="{{ book.cover_image.url }}" alt="{{ book.title }}">
+                            {% else %}
+                            <div class="no-image">No Cover Available</div>
+                            {% endif %}
+                        </div>
+                        <div class="book-details">
+                            <h3>{{ book.title }}</h3>
+                            <p class="author">By {{ book.author }}</p>
+                            <p class="categories">Genre: {{ book.genre }}</p>
+                            <p class="description">{{ book.description|truncatechars:100 }}</p>
+                            <div class="status {% if book.is_available %}available{% else %}borrowed{% endif %}">
+                                <i class="fas fa-{% if book.is_available %}check-circle{% else %}times-circle{% endif %}"></i>
+                                {% if book.is_available %}Available{% else %}Borrowed{% endif %}
+                            </div>
+                            <div class="book-actions">
+                                <a href="{% url 'edit_book' book.id %}" class="edit-book-btn">
+                                    <i class="fas fa-edit"></i> Edit
+                                </a>
+                                <a href="{% url 'delete_book' book.id %}" class="delete-book-btn" onclick="return confirm('Are you sure you want to delete this book?')">
+                                    <i class="fas fa-trash"></i> Delete
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <div class="no-books">
+                        <p>No books available.</p>
+                        <p>Click the "Add Book" button to add your first book.</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books. Join our community of book
+                        lovers today.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#about">About Us</a></li>
+                        <li><a href="{% url 'books_list' %}">Books</a></li>
+                        <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +20 106 150 9572</li>
+                        <li><i class="fas fa-envelope"></i> contact@bookly.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> FCAI-Cairo University</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.booksData = [];
+    </script>
+    <script src="{% static 'js/manage_book_new.js' %}?v={% now 'U' %}"></script>
+</body>
+
+</html>

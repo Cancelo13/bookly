@@ -1,0 +1,2151 @@
+[
+    {
+        "title": "The World is Flat",
+        "authors": [
+            "Thomas L. Friedman"
+        ],
+        "categories": [
+            "Computer science"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=4p69QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "The Traveling Salesman Problem and Its Variations",
+        "authors": [
+            "G. Gutin",
+            "A.P. Punnen"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=JBK_BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Scale-Space Theory in Computer Vision",
+        "authors": [
+            "Tony Lindeberg"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=u21OX41EbVkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "A Course in Computational Algebraic Number Theory",
+        "authors": [
+            "Henri Cohen"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=5TP6CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Arne Beurling und Hitlers Geheimschreiber",
+        "authors": [
+            "Bengt Beckman"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Em0z5lyFsPAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Computer Science and Communications Dictionary",
+        "authors": [
+            "Martin Weik"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=MyDr_ABvNy0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "How to Design Programs",
+        "authors": [
+            "Matthias Felleisen"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Eg1Tu9Ds8ugC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "A Brief History of Computing",
+        "authors": [
+            "Gerard O'Regan"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=X7kWyJXB7z0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Enterprise Architecture at Work",
+        "authors": [
+            "Marc Lankhorst"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=FT5RDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "PHP Objects, Patterns, and Practice",
+        "authors": [
+            "Matt Zandstra"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=1JkQAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Data Compression",
+        "authors": [
+            "David Salomon"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=PT1fcX321I4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Founders at Work",
+        "authors": [
+            "Jessica Livingston"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=oFTYD9IHX5YC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "How to Solve It: Modern Heuristics",
+        "authors": [
+            "Zbigniew Michalewicz",
+            "David B. Fogel"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=RJbV_-JlIUQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Social Networking Spaces",
+        "authors": [
+            "Todd Kelsey"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ceZz1JNcDloC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Encyclopedia of Machine Learning",
+        "authors": [
+            "Claude Sammut",
+            "Geoffrey I. Webb"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=i8hQhp1a62UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Programming Languages and Operational Semantics",
+        "authors": [
+            "Maribel Fernández"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=dzi5BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Isabelle/HOL",
+        "authors": [
+            "Tobias Nipkow",
+            "Lawrence C. Paulson",
+            "Markus Wenzel"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=R6ul20M6nTIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Mathematics in Computing",
+        "authors": [
+            "Gerard O’Regan"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=hnLJDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Principles of Digital Transmission",
+        "authors": [
+            "Sergio Benedetto",
+            "Ezio Biglieri"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=_MZV7fzQmp0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Probability and Statistics for Computer Science",
+        "authors": [
+            "David Forsyth"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=7zdDDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Web Standards Solutions",
+        "authors": [
+            "Daniel Cederholm"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=NY8mHf5WVLcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Combinatorial Optimization",
+        "authors": [
+            "Bernhard Korte",
+            "Jens Vygen"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=EjtRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The SGML FAQ Book",
+        "authors": [
+            "S.J. DeRose"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=OyJHFJsnh10C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Handbook of Floating-Point Arithmetic",
+        "authors": [
+            "Jean-Michel Muller",
+            "Nicolas Brisebarre",
+            "Florent de Dinechin",
+            "Claude-Pierre Jeannerod",
+            "Vincent Lefèvre",
+            "Guillaume Melquiond",
+            "Nathalie Revol",
+            "Damien Stehlé",
+            "Serge Torres"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=baFvrIOPvncC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Numbers and Computers",
+        "authors": [
+            "Ronald T. Kneusel"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=O3c1EQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Basics of Modern Mathematical Statistics",
+        "authors": [
+            "Vladimir Spokoiny",
+            "Thorsten Dickhaus"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=e0cVBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Beginning EJB 3",
+        "authors": [
+            "Jonathan Wetherbee",
+            "Raghu Kodali",
+            "Chirag Rathod",
+            "Peter Zadrozny"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=vRZDY70khPYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "NIELS HENRIK ABEL and his Times",
+        "authors": [
+            "Arild Stubhaug"
+        ],
+        "categories": [
+            "Language Arts & Disciplines"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ycvuCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Fundamentals of Quantum Computing",
+        "authors": [
+            "Venkateswaran Kasirajan"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=NVw0EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "A Theory of Objects",
+        "authors": [
+            "Martin Abadi",
+            "Luca Cardelli"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=4xT3LgCPP5UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Intelligent Data Analysis",
+        "authors": [
+            "Michael R. Berthold",
+            "David J Hand"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=den1CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Concrete Mathematics",
+        "authors": [
+            "Ronald L. Graham",
+            "Donald Ervin Knuth",
+            "Oren Patashnik"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=cjgPAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Information Retrieval",
+        "authors": [
+            "David A. Grossman",
+            "Ophir Frieder"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=65oACAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "JPEG",
+        "authors": [
+            "William B. Pennebaker",
+            "Joan L. Mitchell"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=AepB_PZ_WMkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Computational Geometry",
+        "authors": [
+            "Franco P. Preparata",
+            "Michael Shamos"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=gFtvRdUY09UC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Principles of Program Analysis",
+        "authors": [
+            "Flemming Nielson",
+            "Hanne R. Nielson",
+            "Chris Hankin"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=RLjt0xSj8DcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Computer Science",
+        "authors": [
+            "J. Glenn Brookshear"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=UY8mAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "PCI System Architecture",
+        "authors": [
+            "Tom Shanley",
+            "Don Anderson",
+            "MindShare, Inc"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=X9JQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "User Interface Design for Programmers",
+        "authors": [
+            "Joel Spolsky"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=0NpQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Discrete Mathematics",
+        "authors": [
+            "Richard Johnsonbaugh"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=KJwvt2Zz2R8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies",
+        "authors": [
+            "Erik Brynjolfsson",
+            "Andrew McAfee"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=WiKwAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Theories of the Information Society",
+        "authors": [
+            "Frank Webster"
+        ],
+        "categories": [
+            "Communication"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=17REFWgj93IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "新·擁抱未來",
+        "authors": null,
+        "categories": [
+            "Computer industry"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=NugPAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Jacquard's Web",
+        "authors": [
+            "James Essinger"
+        ],
+        "categories": [
+            "Biography & Autobiography"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=zXoRDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Electronic Banking",
+        "authors": [
+            "SCN Education B.V."
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=iZu7GDbcp-AC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Fundamentals of Information Technology",
+        "authors": [
+            "Bharihoke"
+        ],
+        "categories": [
+            "Computer literacy"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=dOURvLOrCrwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "COBIT 5",
+        "authors": [
+            "Information Systems Audit and Control Association"
+        ],
+        "categories": [
+            "Business enterprises"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=aSe71p6OeR4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Paradox of American Power",
+        "authors": [
+            "Joseph S. Nye"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=7Ho8DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Enterprise Architecture at Work",
+        "authors": [
+            "Marc Lankhorst"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=FT5RDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The MPEG Handbook",
+        "authors": [
+            "John Watkinson"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=STFAx4jqU5IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Making Sense of Change Management",
+        "authors": [
+            "Esther Cameron",
+            "Mike Green"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=6ntE9TLr7YYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Social Media and Democracy",
+        "authors": [
+            "Nathaniel Persily",
+            "Joshua A. Tucker",
+            "Joshua Aaron Tucker"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=NEjzDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Democracy's Fourth Wave?",
+        "authors": [
+            "Philip N. Howard",
+            "Muzammil M. Hussain"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ayHOyrmmT8kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Information Systems Today",
+        "authors": [
+            "Leonard M. Jessup",
+            "Joseph S. Valacich",
+            "Michael Wade"
+        ],
+        "categories": [
+            "Information storage and retrieval systems"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ANKYAAAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "E-business",
+        "authors": [
+            "Brian Stanford-Smith",
+            "Paul T. Kidd"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=6FVAfEFyMcwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "If ... Then",
+        "authors": [
+            "Taina Bucher"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=2GdaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Fourth Industrial Revolution",
+        "authors": [
+            "Klaus Schwab"
+        ],
+        "categories": null,
+        "thumbnail": null
+    },
+    {
+        "title": "A Short History of Copyright",
+        "authors": [
+            "Benedict Atkinson",
+            "Brian Fitzgerald"
+        ],
+        "categories": [
+            "Law"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=YUW4AQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Bionomics",
+        "authors": [
+            "Michael Rothschild"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=cA_aQ4vDBmMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Process Mining",
+        "authors": [
+            "Wil M. P. van der Aalst"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=hUEGDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Foundations of Object-oriented Languages",
+        "authors": [
+            "Kim B. Bruce"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=9NGWq3K1RwUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Digital Entrepreneurship",
+        "authors": [
+            "Vincenzo Morabito"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=NfJLEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Liability for Crimes Involving Artificial Intelligence Systems",
+        "authors": [
+            "Gabriel Hallevy"
+        ],
+        "categories": [
+            "Law"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=xf05BQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Surveillance Studies",
+        "authors": [
+            "David Lyon"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=X_XcZS5BmuQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Transcending Horizons Through Innovative Global Practices",
+        "authors": [
+            "Editor:Alok Bansal",
+            "Yogeshwari Phatak",
+            "I C Gupta",
+            "Rajendra Jain"
+        ],
+        "categories": [
+            "Finance"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Wm4IWvB4rEUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Microsoft Outlook Programming",
+        "authors": [
+            "Sue Mosher"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=8M60Hy6B6LgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "This Is Why We Can't Have Nice Things",
+        "authors": [
+            "Whitney Phillips"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=pjYhBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Digital Justice",
+        "authors": [
+            "M. Ethan Katsh",
+            "Orna Rabinovich-Einy"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=JE0jDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Strategic Information Management",
+        "authors": [
+            "Robert Galliers",
+            "Dorothy E. Leidner"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=bHyKEuMFFgcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Information Security",
+        "authors": [
+            "Donald L. Pipkin"
+        ],
+        "categories": [
+            "Computer security"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=HTtkQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Making Things Happen",
+        "authors": [
+            "Scott Berkun"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=at-bAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Learning by Effective Utilization of Technologies: Facilitating Intercultural Understanding",
+        "authors": [
+            "R. Mizoguchi",
+            "P. Dillenbourg",
+            "Z. Zhu"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=1QXvAgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Cell Phone Culture",
+        "authors": [
+            "Gerard Goggin"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=tQ74YyKYpNMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Soft Edge",
+        "authors": [
+            "Paul Levinson"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=SpobuEsyFOoC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Microsoft ADO.NET Step by Step",
+        "authors": [
+            "Rebecca Riordan"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=bKc5p-nfDxgC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Agile Modeling",
+        "authors": [
+            "Scott Ambler"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Bp5QAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "InfoCulture",
+        "authors": [
+            "Steven D. Lubar"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=dlUhAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Macmillan Dictionary of Information Technology",
+        "authors": [
+            "Dennis Longley",
+            "Michael Shain"
+        ],
+        "categories": [
+            "Communication"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ZUhImwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "User Interface Design for Programmers",
+        "authors": [
+            "Joel Spolsky"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=0NpQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Dictionary of Information Technology",
+        "authors": [
+            "Dennis Longley",
+            "Michael Shain"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=_UIIAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "On Intelligence",
+        "authors": [
+            "Jeff Hawkins",
+            "Sandra Blakeslee"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=xTD4LqJT0ggC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Artificial Intelligence",
+        "authors": [
+            "Stuart Jonathan Russell",
+            "Peter Norvig",
+            "Ernest Davis"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=8jZBksh-bUMC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Darwin Among The Machines",
+        "authors": [
+            "George Dyson"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=v8DaAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Springer Handbook of Automation",
+        "authors": [
+            "Shimon Y. Nof"
+        ],
+        "categories": [
+            "Technology & Engineering"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=2v_91vSCIK0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Reinforcement Learning",
+        "authors": [
+            "Marco Wiering",
+            "Martijn van Otterlo"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=YPjNuvrJR0MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Ways of Thinking",
+        "authors": [
+            "L szl¢ Mr?",
+            "Viktor Msz ros"
+        ],
+        "categories": [
+            "Psychology"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=7dA816k4rGwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Emperor's New Mind",
+        "authors": [
+            "Roger Penrose"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=0mVEBJ34v9EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Emperor's New Mind",
+        "authors": [
+            "Roger Penrose"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=GKkdAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Shadows of the Mind",
+        "authors": [
+            "Roger Penrose"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=sKB4-n2hKZgC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "An Introduction to Statistical Learning",
+        "authors": [
+            "Gareth James",
+            "Daniela Witten",
+            "Trevor Hastie",
+            "Robert Tibshirani"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=5dQ6EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Startup Wife",
+        "authors": [
+            "Tahmima Anam"
+        ],
+        "categories": [
+            "Fiction"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=XBBvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Search Methodologies",
+        "authors": [
+            "Edmund K. Burke",
+            "Graham Kendall"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=V-O5BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Information System Concepts",
+        "authors": [
+            "Eckhard D. Falkenberg",
+            "Wolfgang Hesse",
+            "Antoni Olive"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=V5yFCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Computers and Cognition",
+        "authors": [
+            "J.H. Fetzer"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=sM-JnRmcH4EC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Neuromancer",
+        "authors": [
+            "William Gibson"
+        ],
+        "categories": [
+            "Artificial intelligence"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=QMBLHMv-k6oC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Fluid Concepts And Creative Analogies",
+        "authors": [
+            "Douglas R. Hofstadter",
+            "Fluid Analogies Research Group"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ONlOAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Robotics, Vision and Control",
+        "authors": [
+            "Peter Corke"
+        ],
+        "categories": [
+            "Technology & Engineering"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=d4EkDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+        "authors": [
+            "Aurélien Géron"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=khpYDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Robots and Empire",
+        "authors": [
+            "Isaac Asimov"
+        ],
+        "categories": [
+            "Fiction"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=I3yeQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Neural Networks and Deep Learning",
+        "authors": [
+            "Charu C. Aggarwal"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=achqDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Evolutionary Computation",
+        "authors": [
+            "David B. Fogel"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=4_VQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Conceptual Structures",
+        "authors": [
+            "John F. Sowa"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ul_cAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Generative Deep Learning",
+        "authors": [
+            "David Foster"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Bkq8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Reality of the Unobservable",
+        "authors": [
+            "Evandro Agazzi",
+            "M. Pauri"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=OIG0F37QrmQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Encyclopedia of Machine Learning",
+        "authors": [
+            "Claude Sammut",
+            "Geoffrey I. Webb"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=i8hQhp1a62UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Isabelle/HOL",
+        "authors": [
+            "Tobias Nipkow",
+            "Lawrence C. Paulson",
+            "Markus Wenzel"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=R6ul20M6nTIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "If ... Then",
+        "authors": [
+            "Taina Bucher"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=2GdaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Age of Em",
+        "authors": [
+            "Robin Hanson"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=zIkSDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Mind Children",
+        "authors": [
+            "Hans Moravec"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=56mb7XuSx3QC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Cyber Defence in the Age of AI, Smart Societies and Augmented Humanity",
+        "authors": [
+            "Hamid Jahankhani",
+            "Stefan Kendzierskyj",
+            "Nishan Chelvachandran",
+            "Jaime Ibarra"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=YKjbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Bioinformatics, Second Edition",
+        "authors": [
+            "Pierre Baldi",
+            "Søren Brunak"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=tqJpAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "The Creative Mind",
+        "authors": [
+            "Margaret A. Boden"
+        ],
+        "categories": [
+            "Philosophy"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=obVRpZEElMcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Deep Learning in Natural Language Processing",
+        "authors": [
+            "Li Deng",
+            "Yang Liu"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=y_lcDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Autonomous Robots and Agents",
+        "authors": [
+            "Gourab Sen Gupta"
+        ],
+        "categories": [
+            "Technology & Engineering"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ReL7xvsw-vIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Recommender Systems Handbook",
+        "authors": [
+            "Francesco Ricci",
+            "Lior Rokach",
+            "Bracha Shapira",
+            "Paul B. Kantor"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=2hFG21Cp2qcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Essential Turing",
+        "authors": [
+            "Alan Mathison Turing"
+        ],
+        "categories": [
+            "Biography & Autobiography"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=fIjuAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Being There",
+        "authors": [
+            "Andy Clark"
+        ],
+        "categories": [
+            "Philosophy"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=mSOGngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Scripts, Plans, Goals, and Understanding",
+        "authors": [
+            "Roger C. Schank",
+            "Robert P. Abelson"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=YZ99AAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Fundamentals of Artificial Neural Networks",
+        "authors": [
+            "Mohamad H. Hassoun"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Otk32Y3QkxQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Thinking Machines",
+        "authors": [
+            "Igor Aleksander",
+            "Piers Burnett"
+        ],
+        "categories": [
+            "Science"
+        ],
+        "thumbnail": null
+    },
+    {
+        "title": "Reinforcement Learning",
+        "authors": [
+            "Richard S. Sutton",
+            "Andrew G. Barto"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=CAFR6IBF4xYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Introduction to Machine Learning",
+        "authors": [
+            "Yves Kodratoff"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=SY789Y7Fc14C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Mathematics for Machine Learning",
+        "authors": [
+            "Marc Peter Deisenroth",
+            "A. Aldo Faisal",
+            "Cheng Soon Ong"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=pFjPDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Learning with Kernels",
+        "authors": [
+            "Bernhard Schölkopf",
+            "Alexander J. Smola"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=y8ORL3DWt4sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Hands-On Machine Learning with Scikit-Learn and TensorFlow",
+        "authors": [
+            "Aurélien Géron"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=khpYDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Deep Learning with Python, Second Edition",
+        "authors": [
+            "Francois Chollet",
+            "François Chollet"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=XHpKEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Bioinformatics, Second Edition",
+        "authors": [
+            "Pierre Baldi",
+            "Søren Brunak"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=tqJpAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Computer Age Statistical Inference",
+        "authors": [
+            "Bradley Efron",
+            "Trevor Hastie"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Sj1yDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "C4.5",
+        "authors": [
+            "J. Ross Quinlan"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=HExncpjbYroC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Reservoir Computing",
+        "authors": [
+            "Kohei Nakajima",
+            "Ingo Fischer"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=AQc8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Deep Learning with Python",
+        "authors": [
+            "Francois Chollet"
+        ],
+        "categories": [
+            "Machine learning"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Yo3CAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Generative Deep Learning",
+        "authors": [
+            "David Foster"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Bkq8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Natural Language Processing with Transformers",
+        "authors": [
+            "Lewis Tunstall",
+            "Leandro von Werra",
+            "Thomas Wolf"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=nzxbEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Lifelong Machine Learning, Second Edition",
+        "authors": [
+            "Zhiyuan Chen",
+            "Bing Liu"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=z4RyEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Understanding Machine Learning",
+        "authors": [
+            "Shai Shalev-Shwartz",
+            "Shai Ben-David"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ttJkAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Graph Representation Learning",
+        "authors": [
+            "William L. Hamilton"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=6YRyEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Los museos abandonados",
+        "authors": [
+            "Cristina Peri Rossi"
+        ],
+        "categories": [
+            "Fiction"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=eKhfAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Machine Learning for Text",
+        "authors": [
+            "Charu C. Aggarwal"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=6UNuEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Imitation in Animals and Artifacts",
+        "authors": [
+            "Chrystopher L. Nehaniv",
+            "Kerstin Dautenhahn"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=uJTc5wlAYAUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Views Into the Chinese Room",
+        "authors": [
+            "John Preston",
+            "Mark Bishop"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=KPTuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Data Mining with Decision Trees",
+        "authors": [
+            "Lior Rokach",
+            "Oded Z. Maimon"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=8B9pDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Machine Learning Essentials",
+        "authors": [
+            "Alboukadel Kassambara"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=745QDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Deep Learning Applications",
+        "authors": [
+            "M. Arif Wani",
+            "Mehmed Kantardzic",
+            "Moamar Sayed-Mouchaweh"
+        ],
+        "categories": [
+            "Technology & Engineering"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=_5HTDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Optimization for Machine Learning",
+        "authors": [
+            "Suvrit Sra",
+            "Sebastian Nowozin",
+            "Stephen J. Wright"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=JPQx7s2L1A8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Machine Learning",
+        "authors": [
+            "Peter Flach"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Ofp4h_oXsZ4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Interpretable Machine Learning",
+        "authors": [
+            "Christoph Molnar"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=jBm3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Kernel Methods for Pattern Analysis",
+        "authors": [
+            "John Shawe-Taylor",
+            "Nello Cristianini"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=9i0vg12lti4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Hands-on Machine Learning with Scikit-Learn, Keras, and TensorFlow",
+        "authors": [
+            "Aurélien Géron"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=OCS1twEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Learning TensorFlow.js",
+        "authors": [
+            "Gant Laborde"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=o2UtEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Guide to Deep Learning Basics",
+        "authors": [
+            "Sandro Skansi"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=PgDMDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Human Computation",
+        "authors": [
+            "Edith Law",
+            "Luis von Ahn"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=kYRyEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Data Science on AWS",
+        "authors": [
+            "Chris Fregly",
+            "Antje Barth"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=SdgnEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Decentralised Internet of Things",
+        "authors": [
+            "Mohammad Ayoub Khan",
+            "Mohammad Tabrez Quasim",
+            "Fahad Algarni",
+            "Abdullah Alharthi"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=W3vQDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Graph Algorithms for Data Science",
+        "authors": [
+            "Tomaž Bratanic"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=K4rxEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Deep Learning on Graphs",
+        "authors": [
+            "Yao Ma",
+            "Jiliang Tang"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Xfw7EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Deep Learning",
+        "authors": [
+            "Josh Patterson",
+            "Adam Gibson"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=qrcuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Foundations of Machine Learning",
+        "authors": [
+            "Mehryar Mohri",
+            "Afshin Rostamizadeh",
+            "Ameet Talwalkar"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=maz6AQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Data-Driven Science and Engineering",
+        "authors": [
+            "Steven L. Brunton",
+            "J. Nathan Kutz"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=rxNkEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Machine Learning and Data Mining",
+        "authors": [
+            "Igor Kononenko",
+            "Matjaz Kukar"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=G_rgpjsnsG8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "The Use of Knowledge in Analogy and Induction",
+        "authors": [
+            "Stuart Jonathan Russell"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=TLpQAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Identifying and Prioritizing Systemically Important Entities",
+        "authors": [
+            "John Bordeaux",
+            "Jonathan William Welburn",
+            "Sasha Romanosky",
+            "Benjamin Boudreaux",
+            "Aaron Strong"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=uOtb0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Beauftragte für IT-Sicherheit und Informationssicherheit",
+        "authors": [
+            "Florian Deusch",
+            "Tobias Eggendorfer"
+        ],
+        "categories": null,
+        "thumbnail": null
+    },
+    {
+        "title": "Artificial Intelligence",
+        "authors": [
+            "Stuart Jonathan Russell",
+            "Peter Norvig",
+            "Ernest Davis"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=8jZBksh-bUMC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Notes on Introductory Combinatorics",
+        "authors": [
+            "George Pólya",
+            "Robert E. Tarjan",
+            "Donald R. Woods"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=y6KmsI0Icp0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Algorithms on Strings, Trees, and Sequences",
+        "authors": [
+            "Dan Gusfield"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Ofw5w1yuD8kC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Traveling Salesman Problem and Its Variations",
+        "authors": [
+            "G. Gutin",
+            "A.P. Punnen"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=JBK_BAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "The Algorithm Design Manual: Text",
+        "authors": [
+            "Steven S. Skiena"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=TrXd-gxPhVYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Number Theory for Computing",
+        "authors": [
+            "Song Y. Yan"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=X8aqCAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "A Course in Computational Algebraic Number Theory",
+        "authors": [
+            "Henri Cohen"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=5TP6CAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Prime Numbers and Computer Methods for Factorization",
+        "authors": [
+            "Hans Riesel"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=94DaZuVETzIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Algorithms + Data Structures",
+        "authors": [
+            "Niklaus Wirth"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=O6FQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Gynaecology: Evidence-Based Algorithms",
+        "authors": [
+            "Jyotsna Pundir",
+            "Arri Coomarasamy"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=ifnUCwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Data Structures & Algorithm Analysis in C++",
+        "authors": [
+            "Mark Allen Weiss"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=wt4pAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Elements of Programming",
+        "authors": [
+            "Alexander A. Stepanov",
+            "Paul McJones"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=tjOlkl7ecVQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Computational Geometry",
+        "authors": [
+            "Franco P. Preparata",
+            "Michael I. Shamos"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=_p3eBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Generating All Trees",
+        "authors": [
+            "Donald Ervin Knuth (Mathematiker)"
+        ],
+        "categories": [
+            "Algorithms"
+        ],
+        "thumbnail": null
+    },
+    {
+        "title": "Learning with Kernels",
+        "authors": [
+            "Bernhard Schölkopf",
+            "Alexander J. Smola"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=y8ORL3DWt4sC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Encyclopedia of Algorithms",
+        "authors": [
+            "Ming-Yang Kao"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=i3S9_GnHZwYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Programming Challenges",
+        "authors": [
+            "Steven S. Skiena",
+            "Miguel A. Revilla"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=NN8J9xId7gkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Turing's Vision",
+        "authors": [
+            "Chris Bernhardt"
+        ],
+        "categories": [
+            "Biography & Autobiography"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=Bf0NDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Algorithmics",
+        "authors": [
+            "David Harel",
+            "Yishai Feldman"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=STF5oAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Elementary Functions",
+        "authors": [
+            "Jean-Michel Muller"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=eNaCDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Digraphs",
+        "authors": [
+            "Jørgen Bang-Jensen",
+            "Gregory Z. Gutin"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=5GdXCWhE4-MC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Local Search in Combinatorial Optimization",
+        "authors": [
+            "Emile H. L. Aarts",
+            "Jan Karel Lenstra"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=MOk9DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Complexity Theory",
+        "authors": [
+            "Ingo Wegener"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=1fo7_KoFUPsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Modern Graph Theory",
+        "authors": [
+            "Bela Bollobas"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=JeIlBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Data Structures and Algorithm Analysis in C",
+        "authors": [
+            "Mark Allen Weiss"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=uQlRAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "If ... Then",
+        "authors": [
+            "Taina Bucher"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=2GdaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Handbook of Floating-Point Arithmetic",
+        "authors": [
+            "Jean-Michel Muller",
+            "Nicolas Brisebarre",
+            "Florent de Dinechin",
+            "Claude-Pierre Jeannerod",
+            "Vincent Lefèvre",
+            "Guillaume Melquiond",
+            "Nathalie Revol",
+            "Damien Stehlé",
+            "Serge Torres"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=baFvrIOPvncC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Multi-Objective Optimization Using Evolutionary Algorithms",
+        "authors": [
+            "Kalyanmoy Deb"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=iwNRAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Computational Molecular Biology",
+        "authors": [
+            "Pavel Pevzner"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=dpgh2UxGpacC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Computational Economics and Finance",
+        "authors": [
+            "Hal R. Varian"
+        ],
+        "categories": [
+            "Business & Economics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=iXFkN278_rQC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Text Algorithms",
+        "authors": [
+            "Maxime Crochemore",
+            "Wojciech Rytter"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=tSxLkRIyvoIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "How to Solve it by Computer",
+        "authors": [
+            "R. G. Dromey"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=UMktAAAAYAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Data Structures and Algorithm Analysis in C++",
+        "authors": [
+            "Mark Allen Weiss"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=KMM9PgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Problems on Algorithms",
+        "authors": [
+            "Ian Parberry"
+        ],
+        "categories": [
+            "Algorithms"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=tdB8QgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Data Streams",
+        "authors": [
+            "S. Muthukrishnan"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=415loiMd_c0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Digital Dice",
+        "authors": [
+            "Paul J. Nahin"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=bmhuaGP3FOEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Design and Analysis of Randomized Algorithms",
+        "authors": [
+            "J. Hromkovic"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=XARmmrB86UEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Using Algebraic Geometry",
+        "authors": [
+            "David A Cox",
+            "John Little",
+            "Donal O'Shea"
+        ],
+        "categories": [
+            "Mathematics"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=QFFpepgQgT0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    {
+        "title": "Introduction to Algorithms",
+        "authors": [
+            "Udi Manber"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=mJ4ZAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    {
+        "title": "Fundamentals of the Theory of Computation",
+        "authors": [
+            "Raymond Greenlaw",
+            "H. James Hoover"
+        ],
+        "categories": [
+            "Computers"
+        ],
+        "thumbnail": "http://books.google.com/books/content?id=DVg9qRmoNPEC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    }
+]

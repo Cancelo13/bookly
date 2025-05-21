@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bookly{% endblock %}</title>
+    <link href="{% static 'css/master.css' %}" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/bookly-logo3.png' %}" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#about">About us</a></li>
+                <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                {% if user.is_authenticated %}
+                    <li class="books-page"><a href="{% url 'books_list' %}">Our Books</a></li>
+                    {% if user.is_staff %}
+                    <li><a href="{% url 'admin_page' %}">Admin Page</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <div class="auth-buttons">
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
+                    {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon">
+                        <i class="fas fa-user"></i> {{ user.username }}
+                    </a>
+                    <a href="{% url 'logout' %}" class="logout-btn">Logout</a>
+                {% else %}
+                    <a href="{% url 'login' %}" class="login-btn">Login</a>
+                    <a href="{% url 'register' %}" class="signup-btn">Sign Up</a>
+                {% endif %}
+            </div>
+        </div>
+    </nav>
+
+    <!-- Messages -->
+    {% if messages %}
+    <div class="messages-container">
+        {% for message in messages %}
+        <div class="alert alert-{% if message.tags %}{{ message.tags }}{% else %}info{% endif %}">
+            {{ message }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="{% static 'js/auth.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

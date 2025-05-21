@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bookly</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/bookly-logo3.png' %}" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#about">About us</a></li>
+                <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                <li class="books-page"><a href="{% url 'books_list' %}">Our Books</a></li>
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <li><a href="{% url 'admin_page' %}">Admin Page</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <div class="auth-buttons">
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: inline-block;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: none;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: inline-block;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: inline-block;"><a href="{% url 'register' %}">Sign Up</a></button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <form class="login-form" method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <h2>Login</h2>
+            
+            <!-- Display Django messages -->
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{% if message.tags %}{{ message.tags }}{% else %}info{% endif %}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+            
+            <!-- Error message container for JavaScript validation -->
+            <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+            
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="form-control" 
+                       placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" 
+                       placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div class="form-footer">
+                <p>Don't have an account? <a href="{% url 'register' %}">Register here</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'books_list' %}">Books</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- JavaScript for form validation and notifications -->
+    <!-- Minimal JavaScript for form validation only -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.querySelector('.login-form');
+            const errorDiv = document.getElementById('error-message');
+            
+            if (loginForm) {
+                loginForm.addEventListener('submit', function(e) {
+                    const username = document.getElementById('username').value.trim();
+                    const password = document.getElementById('password').value.trim();
+                    
+                    if (!username || !password) {
+                        e.preventDefault();
+                        if (errorDiv) {
+                            errorDiv.textContent = 'Please enter both username and password';
+                            errorDiv.style.display = 'block';
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="mb-0">Update Book</h3>
+                </div>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            {{ form.title }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="author" class="form-label">Author</label>
+                            {{ form.author }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            {{ form.description }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="genre" class="form-label">Genre</label>
+                            {{ form.genre }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="cover_image" class="form-label">Cover Image</label>
+                            {{ form.cover_image }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="publication_date" class="form-label">Publication Date</label>
+                            {{ form.publication_date }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="is_available" class="form-label">Is Available</label>
+                            {{ form.is_available }}
+                        </div>
+                        <button type="submit" class="btn btn-primary">Update Book</button>
+                        <a href="{% url 'manage_books' %}" class="btn btn-secondary">Cancel</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

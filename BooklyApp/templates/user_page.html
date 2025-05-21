@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookly - User Profile</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/user.css' %}">
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body {% if user.is_authenticated %}data-user-authenticated{% endif %}>
+    <div class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/bookly-logo3.png' %}" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#about">About us</a></li>
+                <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                <li class="books-page"><a href="{% url 'books_list' %}">Our Books</a></li>
+                {% if user.is_authenticated and not user.is_staff %}
+                <li><a href="{% url 'borrowed_books' %}">My Borrowed Books</a></li>
+                {% endif %}
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <li><a href="{% url 'admin_page' %}">Admin Page</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <div class="auth-buttons">
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: inline-block;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: none;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: inline-block;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: inline-block;"><a href="{% url 'register' %}">Sign Up</a></button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="dashboard">
+        <div class="container">
+            <div class="dashboard-grid">
+                <div class="dashboard-sidebar">
+                    <div class="user-info">
+                        {% if user_profile.avatar and not user_profile.avatar.name == 'images/default-avatar.png' %}
+                            <img src="{{ user_profile.avatar.url }}" alt="{{ user.username }}'s Avatar" class="user-avatar">
+                        {% else %}
+                            <img src="{% static 'images/default-avatar.png' %}" alt="Default Avatar" class="user-avatar">
+                        {% endif %}
+                        <h3 class="user-name">{{ user.username }}</h3>
+                        <p class="user-email">{{ user.email }}</p>
+                    </div>
+                    <nav class="dashboard-nav">
+                        <button class="nav-item active" data-tab="borrowed">
+                            <i class="fas fa-book"></i> Borrowed Books
+                        </button>
+                        <button class="nav-item" data-tab="settings">
+                            <i class="fas fa-cog"></i> Settings
+                        </button>
+                    </nav>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="dashboard-tab active" id="borrowed">
+                        <h2>Borrowed Books</h2>
+                        <div class="borrowed-books-list">
+                            {% if borrowed_books %}
+                                {% for book in borrowed_books %}
+                                <div class="borrowed-book-item">
+                                    <div class="book-cover-container">
+                                        {% if book.cover_image %}
+                                            <img src="{{ book.cover_image.url }}" alt="{{ book.title }}" class="book-cover">
+                                        {% else %}
+                                            <img src="{% static 'images/default-book-cover.jpg' %}" alt="{{ book.title }}" class="book-cover">
+                                        {% endif %}
+                                    </div>
+                                    <div class="book-details">
+                                        <h3 class="book-title">{{ book.title }}</h3>
+                                        <p class="book-author">{{ book.author }}</p>
+                                        <form method="post" action="{% url 'return_book' book.id %}">
+                                            {% csrf_token %}
+                                            <button type="submit" class="return-book-btn custom-return-btn" style="background-color: #213555; color: #F5EFE7; border: none; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-weight: 600; max-width: 120px; display: inline-block; text-align: center;">Return Book</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="no-books" style="color: #F5EFE7;">No borrowed books yet.</p>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="dashboard-tab" id="settings">
+                        <h2>Account Settings</h2>
+                        <form class="settings-form" method="post" action="{% url 'update_profile' %}" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label>Profile Picture</label>
+                                <input type="file" accept="image/*" name="avatar" id="profilePicture">
+                            </div>
+
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" name="first_name" id="firstName" value="{{ user.first_name }}">
+                            </div>
+                            <div class="form-group">
+                                <label>Last Name</label>
+                                <input type="text" name="last_name" id="lastName" value="{{ user.last_name }}">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" id="email" value="{{ user.email }}">
+                            </div>
+                            <button type="submit" class="save-settings">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books. Join our community of book
+                        lovers today.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#about">About Us</a></li>
+                        <li><a href="{% url 'books_list' %}">Books</a></li>
+                        <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +20 106 150 9572</li>
+                        <li><i class="fas fa-envelope"></i> contact@bookly.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> FCAI-Cairo University</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navItems = document.querySelectorAll('.nav-item');
+            const tabs = document.querySelectorAll('.dashboard-tab');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    const tabId = item.getAttribute('data-tab');
+
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    tabs.forEach(tab => tab.classList.remove('active'));
+
+                    item.classList.add('active');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>

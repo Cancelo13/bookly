@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Bookly</title>
+    <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/master.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body {% if user.is_authenticated %}data-user-authenticated{% endif %}>
+    <div class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <img src="{% static 'images/bookly-logo3.png' %}" alt="Bookly Logo">
+                <span data-text="Bookly">Bookly</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'home' %}#about">About us</a></li>
+                <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                <li class="books-page"><a href="{% url 'books_list' %}">Our Books</a></li>
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <li><a href="{% url 'admin_page' %}">Admin Page</a></li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            <div class="auth-buttons">
+                {% if user.is_authenticated %}
+                    {% if user.is_staff %}
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: inline-block;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: inline-block;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: none;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: none;"><a href="{% url 'register' %}">Sign Up</a></button>
+                    {% endif %}
+                {% else %}
+                    <a href="{% url 'user_page' %}" class="user-icon" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <button class="logout" style="display: none;"><a href="{% url 'logout' %}">Logout</a></button>
+                    <button class="login" style="display: inline-block;"><a href="{% url 'login' %}">Login</a></button>
+                    <button class="signup" style="display: inline-block;"><a href="{% url 'register' %}">Sign Up</a></button>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="admin-dashboard">
+        <div class="container">
+            <h1>Admin Dashboard</h1>
+            <div class="dashboard-cards">
+                <div class="dashboard-card">
+                    <i class="fas fa-plus"></i>
+                    <h2>Add New Book</h2>
+                    <p>Add a new book to the library</p>
+                    <a href="{% url 'manage_books' %}?action=add" class="dashboard-btn">Add Book</a>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-edit"></i>
+                    <h2>Manage Books</h2>
+                    <p>Edit or delete existing books</p>
+                    <a href="{% url 'manage_books' %}?action=manage" class="dashboard-btn">Manage Books</a>
+                </div>
+                <div class="dashboard-card">
+                    <i class="fas fa-users"></i>
+                    <h2>Manage Users</h2>
+                    <p>View and manage user accounts</p>
+                    <a href="{% url 'manage_users' %}" class="dashboard-btn">Manage Users</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Bookly</h3>
+                    <p>Your ultimate destination for discovering and exploring amazing books. Join our community of book
+                        lovers today.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'home' %}#about">About Us</a></li>
+                        <li><a href="{% url 'books_list' %}">Books</a></li>
+                        <li><a href="{% url 'home' %}#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-phone"></i> +20 106 150 9572</li>
+                        <li><i class="fas fa-envelope"></i> contact@bookly.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> FCAI-Cairo University</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bookly. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
